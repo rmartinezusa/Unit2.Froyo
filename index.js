@@ -21,8 +21,5 @@ function getListOfItems(order) {
 
 
 
-//const flavorListing = getFlavorListing(listOfItemsOrdered, orderArr);
-
-
 //console.log(orderArr);
 console.log(listOfItemsOrdered);
