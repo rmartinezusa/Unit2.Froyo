@@ -19,3 +19,11 @@ function getListOfItems(order) {
     return list;
 }
 
+function logItemsCount(itemCounts) {
+    for (let item in itemCounts) {
+        console.log(`${item}: ${itemCounts[item]}`);
+    }
+}
+
+
+logItemsCount(listOfItemsOrdered);
