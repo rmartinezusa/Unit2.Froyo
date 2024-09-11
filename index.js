@@ -9,17 +9,13 @@ const listOfItemsOrdered = getListOfItems(orderArr);
 
 function getListOfItems(order) {
     const list = {};
-    for (const itme of order) {
-        console.log(itme);
-        if (!list.includes(itme)) {
-            list[itme];
-            //list.push(itme);
+    for (const item of order) {
+        if (list[item]) {
+            list[item]++;
+        } else {
+            list[item] = 1;
         }
     }
     return list;
 }
 
-
-
-//console.log(orderArr);
-console.log(listOfItemsOrdered);
